@@ -1,0 +1,45 @@
+﻿<Window x:Class="Procesor_Simulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Procesor_Simulator"
+        mc:Ignorable="d"
+        Title="Intel 8086" Height="450" Width="600">
+    <Grid>
+        <Label Content="AX" HorizontalAlignment="Left" Margin="32,54,0,0" VerticalAlignment="Top"/>
+        <Label Content="BX" HorizontalAlignment="Left" Margin="32,85,0,0" VerticalAlignment="Top"/>
+        <Label Content="CX" HorizontalAlignment="Left" Margin="32,116,0,0" VerticalAlignment="Top"/>
+        <Label Content="DX" HorizontalAlignment="Left" Margin="32,147,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Name="AX" Margin="75,58,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" Height="18"/>
+        <TextBox HorizontalAlignment="Left" Name="BX" Margin="75,89,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" Height="18"/>
+        <TextBox HorizontalAlignment="Left" Name="CX" Margin="75,120,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" Height="18"/>
+        <TextBox HorizontalAlignment="Left" Name="DX" Margin="75,151,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" Height="18"/>
+        <Button Content="MOV AX, BX" HorizontalAlignment="Left" Margin="270,14,0,0" VerticalAlignment="Top" Width="90" Click="Button_MoveClick"/>
+        <Button Content="MOV AX, CX" HorizontalAlignment="Left" Margin="270,44,0,0" VerticalAlignment="Top" Width="90" Click="Button_MoveClick"/>
+        <Button Content="MOV AX, DX" HorizontalAlignment="Left" Margin="270,74,0,0" VerticalAlignment="Top" Width="90" Click="Button_MoveClick"/>
+        <Button Content="MOV BX, AX" HorizontalAlignment="Left" Margin="270,104,0,0" VerticalAlignment="Top" Width="90" Click="Button_MoveClick"/>
+        <Button Content="MOV BX, CX" HorizontalAlignment="Left" Margin="270,134,0,0" VerticalAlignment="Top" Width="90" Click="Button_MoveClick"/>
+        <Button Content="MOV BX, DX" HorizontalAlignment="Left" Margin="270,164,0,0" VerticalAlignment="Top" Width="90" Click="Button_MoveClick"/>
+        <Button Content="MOV CX, AX" HorizontalAlignment="Left" Margin="270,194,0,0" VerticalAlignment="Top" Width="90" Click="Button_MoveClick"/>
+        <Button Content="MOV CX, BX" HorizontalAlignment="Left" Margin="270,224,0,0" VerticalAlignment="Top" Width="90" Click="Button_MoveClick"/>
+        <Button Content="MOV CX, DX" HorizontalAlignment="Left" Margin="270,254,0,0" VerticalAlignment="Top" Width="90" Click="Button_MoveClick"/>
+        <Button Content="MOV DX, AX" HorizontalAlignment="Left" Margin="270,284,0,0" VerticalAlignment="Top" Width="90" Click="Button_MoveClick"/>
+        <Button Content="MOV DX, BX" HorizontalAlignment="Left" Margin="270,314,0,0" VerticalAlignment="Top" Width="90" Click="Button_MoveClick"/>
+        <Button Content="MOV DX, CX" HorizontalAlignment="Left" Margin="270,344,0,0" VerticalAlignment="Top" Width="90" Click="Button_MoveClick"/>
+        <Button Content="XCHG AX, BX" HorizontalAlignment="Left" Margin="400,14,0,0" VerticalAlignment="Top" Width="90" Click="Button_XCHGClick"/>
+        <Button Content="XCHG AX, CX" HorizontalAlignment="Left" Margin="400,44,0,0" VerticalAlignment="Top" Width="90" Click="Button_XCHGClick"/>
+        <Button Content="XCHG AX, DX" HorizontalAlignment="Left" Margin="400,74,0,0" VerticalAlignment="Top" Width="90" Click="Button_XCHGClick"/>
+        <Button Content="XCHG BX, AX" HorizontalAlignment="Left" Margin="400,104,0,0" VerticalAlignment="Top" Width="90" Click="Button_XCHGClick"/>
+        <Button Content="XCHG BX, CX" HorizontalAlignment="Left" Margin="400,134,0,0" VerticalAlignment="Top" Width="90" Click="Button_XCHGClick"/>
+        <Button Content="XCHG BX, DX" HorizontalAlignment="Left" Margin="400,164,0,0" VerticalAlignment="Top" Width="90" Click="Button_XCHGClick"/>
+        <Button Content="XCHG CX, AX" HorizontalAlignment="Left" Margin="400,194,0,0" VerticalAlignment="Top" Width="90" Click="Button_XCHGClick"/>
+        <Button Content="XCHG CX, BX" HorizontalAlignment="Left" Margin="400,224,0,0" VerticalAlignment="Top" Width="90" Click="Button_XCHGClick"/>
+        <Button Content="XCHG CX, DX" HorizontalAlignment="Left" Margin="400,254,0,0" VerticalAlignment="Top" Width="90" Click="Button_XCHGClick"/>
+        <Button Content="XCHG DX, AX" HorizontalAlignment="Left" Margin="400,284,0,0" VerticalAlignment="Top" Width="90" Click="Button_XCHGClick"/>
+        <Button Content="XCHG DX, BX" HorizontalAlignment="Left" Margin="400,314,0,0" VerticalAlignment="Top" Width="90" Click="Button_XCHGClick"/>
+        <Button Content="XCHG DX, CX" HorizontalAlignment="Left" Margin="400,344,0,0" VerticalAlignment="Top" Width="90" Click="Button_XCHGClick"/>
+        <Button Content="reeset" HorizontalAlignment="Left" Margin="32,14,0,0" VerticalAlignment="Top" Click="ButtonReset_Click"/>
+        <Button Content="random" HorizontalAlignment="Left" Margin="120,14,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+    </Grid>
+</Window>
